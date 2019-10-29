@@ -2,6 +2,26 @@
 layout: page
 title: Más
 permalink: /more/
+
+code_block: |
+  Some content is better in monospace.
+
+  1 + 1 = 2
+  2 + 2 = 4
+javascript_code_block: |
+  function sayHello() {
+      console.log("Hi there!");
+  }
+
+  sayHello();
+example_ruby_code_block: |
+  def say_hello
+    puts 'Hi there!'
+  end
+
+  say_hello
+ 
+
 ---
 
 <section class="bg-primary" id="about">
@@ -11,7 +31,11 @@ permalink: /more/
 				<h2 class="section-heading editable">Esto está hecho en jekyll</h2>
 				<hr class="light">
 				<p class="text-faded editable">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus consequuntur illo quo commodi quia veritatis exercitationem dolor voluptatibus, fugiat iste doloremque a perspiciatis, cum voluptas totam quod recusandae unde!
+				<pre>
+                  <code>
+                    {{ code_block }}
+                  </code>
+                </pre>
 				</p>
 				<a href="/services.html" class="btn btn-default btn-xl editable">Comenzar</a>
 			</div>
