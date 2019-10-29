@@ -1,11 +1,20 @@
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+---
+title: Jekyll Portal
+timezone: UTC
 collections:
   portfolio:
+    title: Portfolio
     output: true
-  posts: {}
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
 _editable_regions:
   image:
     url_src: true
