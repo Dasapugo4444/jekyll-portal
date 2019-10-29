@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Portal - {{ page.title }}</title>
+		<title class="editable">Portal - {{ page.title }}</title>
 		<!-- Bootstrap Core CSS -->
 		<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
 		<!-- Custom Fonts -->
@@ -22,21 +22,21 @@
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
+				<div class="navbar-header editable">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Expandir</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<span class="sr-only editable">Expandir</span>
+					<span class="icon-bar editable"></span>
+					<span class="icon-bar editable"></span>
+					<span class="icon-bar editable"></span>
 					</button>
-					<a class="navbar-brand page-scroll" href="/">Página con jekyll</a>
+					<a class="navbar-brand page-scroll editable" href="/">Página con jekyll</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
             {%- for item in site.data.nav -%}
               <li>
-                <a href="{{ item.link }}" {% if page.url == item.link %}style="color: #f05f40"{% endif %}>{{ item.name }}</a>
+                <a class="editable" href="{{ item.link }}" {% if page.url == item.link %}style="color: #f05f40"{% endif %}>{{ item.name }}</a>
               </li>
             {%- endfor -%}
 					</ul>
@@ -50,17 +50,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2 text-center">
-						<h2 class="section-heading">¡Contactémonos!</h2>
+						<h2 class="section-heading editable">¡Contactémonos!</h2>
 						<hr class="primary">
-						<p>Bueno pues acá está la información sobre nosotros, puedes contactarnos por:</p>
+						<p class="editable">Bueno pues acá está la información sobre nosotros, puedes contactarnos por:</p>
 					</div>
 					<div class="col-lg-4 col-lg-offset-2 text-center">
-						<i class="fa fa-phone fa-3x wow bounceIn"></i>
-						<p>69-420-666</p>
+						<i class="fa fa-phone fa-3x wow bounceIn editable"></i>
+						<p class="editable">69-420-666</p>
 					</div>
 					<div class="col-lg-4 text-center">
-						<i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-						<p><a href="mailto:your-email@your-domain.com">correo@correo.com</a></p>
+						<i class="fa fa-envelope-o fa-3x wow bounceIn editable" data-wow-delay=".1s"></i>
+						<p class="editable"><a href="mailto:your-email@your-domain.com">correo@correo.com</a></p>
 					</div>
 				</div>
 			</div>
