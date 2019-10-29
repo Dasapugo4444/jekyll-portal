@@ -2,34 +2,29 @@
 layout: default
 title: Inicio
 permalink: /
-header: Esta es la página de inicio del portal de jekyll y liquid
-header_description: Este sitio web es un ejemplo del uso de jekyll 😃
-about_button: ¿Quieres saber más?
-services_description: ¿Quieres ver lo que te ofrecemos? 😀
-services_button: Mira nuestros servicios
 ---
 
 <header>
-	<div class="header-content editable">
-		<div class="header-content-inner editable">
+	<div class="header-content">
+		<div class="header-content-inner">
 			<h1 class="editable">
-				{{ header }}
+				Esta es la p&aacute;gina de inicio del portal de jekyll y liquid
 			</h1>
 			<hr />
 			<p class="editable">
-				{{ header_description }}
+				Este sitio web es un ejemplo del uso de jekyll 😃
 			</p>
-			<a class="editable btn btn-primary btn-xl page-scroll" href="/about.html">{{ about_button }}</a>
+			<a class="editable btn btn-primary btn-xl page-scroll" href="/about.html">¿Quieres saber más?</a>
 		</div>
 	</div>
 </header>
-<aside class="bg-dark editable">
-	<div class="container text-center editable">
-		<div class="call-to-actione ditable">
+<aside class="bg-dark">
+	<div class="container text-center">
+		<div class="call-to-action">
 			<h2 class="editable">
-				{{ services_description }}
+				&iquest;Quieres ver lo que te ofrecemos? 😀
 			</h2>
-			<a class="editable btn btn-default btn-xl wow tada" href="/services.html">{{ services_button }}</a>
+			<a class="editable btn btn-default btn-xl wow tada" href="/services.html">Mira nuestros servicios</a>
 		</div>
 	</div>
 </aside>
