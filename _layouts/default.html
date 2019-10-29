@@ -37,9 +37,7 @@
             {%- for item in site.data.nav -%}
               <li>
                 <a class="editable" href="{{ item.link }}" 
-                    {% if page.url == item.link %}
-                        style="color: #f05f40"
-                    {% endif %}>
+                    {% if page.url == item.link %}style="color: #f05f40"{% endif %}>
                     {{ item.name }}
                 </a>
               </li>
