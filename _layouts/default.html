@@ -36,11 +36,11 @@
 					<ul class="nav navbar-nav navbar-right">
             {%- for item in site.data.nav -%}
               <li>
-								<a href="{{ item.link }}" 
-									{% if page.url == item.link %}
-										style="color: #f05f40"
-									{% endif %}>
-									{{ item.name }}</a>
+				<a href="{{ item.link }}" 
+					{% if page.url == item.link %}
+						style="color: #f05f40"
+					{% endif %}>
+					{{ item.name }}</a>
               </li>
             {%- endfor -%}
 					</ul>
