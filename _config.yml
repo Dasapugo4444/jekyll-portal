@@ -2,15 +2,13 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
 collections:
   portfolio:
     output: true
-
+  posts: {}
 _editable_regions:
   image:
     url_src: true
-
 _source_editor:
   tab_size: 4
   theme: clouds_midnight
