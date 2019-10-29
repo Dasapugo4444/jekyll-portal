@@ -10,3 +10,7 @@ collections:
 _editable_regions:
   image:
     url_src: true
+
+_source_editor:
+  tab_size: 4
+  theme: clouds_midnight
