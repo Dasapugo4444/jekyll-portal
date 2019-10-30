@@ -10,7 +10,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Fecha", name: "date", widget: "datetime"}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Cuerpo", name: "body", widget: "markdown"}
@@ -23,4 +23,13 @@ collections:
       - {label: "Imagen", name: "image_path", widget: "image"}
       - {label: "Proyecto", name: "project_name", widget: "string"}
       - {label: "Link", name: "link", widget: "string"}
-      - {label: "Categorías", name: "categories", widget: "list"}
+      - {label: "Categorías", name: "categories", widget: "string"}
+  - name: "pages"
+    label: "Páginas"
+    folder: "_pages"
+    create: true
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Ruta", name: "permalink", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Cuerpo", name: "body", widget: "markdown"}
