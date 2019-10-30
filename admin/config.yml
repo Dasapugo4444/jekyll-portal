@@ -33,12 +33,10 @@ collections:
       - {label: "Ruta", name: "permalink", widget: "string"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Cuerpo", name: "body", widget: "markdown"}
-  - name: "data"
-    label: "Data"
-    files:
-      - label: "Barra de navegación"
-        name: "nav"
-        file: "_data/nav.yml"
-        fields:
-          - {label: "Nombre", name: "name", widget: "string"}
-          - {label: "Link", name: "link", widget: "string"}
+  - label: "Barra de navegación"
+    name: "nav"
+    folder: "_data"
+    create: true
+    fields:
+      - {label: "Nombre", name: "name", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}

@@ -1,2 +1,10 @@
-name: Portal
-link: ../_pages/portal.md
+- name: Acerca de nosotros
+  link: /about.html
+- name: Servicios
+  link: /services.html
+- name: Portafolio
+  link: /portfolio.html
+- name: Blog
+  link: /blog.html
+- name: Más
+  link: ../_pages/more.html
