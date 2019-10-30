@@ -1,8 +1,9 @@
 ---
 title: Jekyll portal
-permalink: /portal/
+permalink: "/portal/"
 layout: page
 ---
+
 <section class="bg-primary" id="about">
 
 <div class="container">
