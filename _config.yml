@@ -15,6 +15,3 @@ plugins:
 - jekyll-feed
 - jekyll-sitemap
 - jekyll-seo
-backend:
-  name: github
-  repo: Dasapugo4444/jekyll-portal
