@@ -16,7 +16,9 @@
 		<!-- Custom CSS -->
     <link rel="stylesheet" href="/css/creative.css" type="text/css">
     {% feed_meta %}
-    {% seo %}
+		{% seo %}
+		<!--- Netlify identity widget --->
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	</head>
 	<body id="page-top">
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -81,5 +83,17 @@
 
 		<!-- Custom Theme JavaScript -->
 		<script src="/js/creative.js"></script>
+		<!-- Netlify route script -->
+		<script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on("init", user => {
+					if (!user) {
+						window.netlifyIdentity.on("login", () => {
+							document.location.href = "/admin/";
+						});
+					}
+				});
+			}
+		</script>
 	</body>
 </html>
