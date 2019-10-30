@@ -8,3 +8,5 @@
   link: /blog.html
 - name: Más
   link: ../_pages/more.html
+- name: Portal
+  link: ../_pages/jekyll-portal.md

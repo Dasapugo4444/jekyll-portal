@@ -33,9 +33,3 @@ collections:
       - {label: "Ruta", name: "permalink", widget: "string"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Cuerpo", name: "body", widget: "markdown"}
-  - label: "Data"
-    name: "data"
-    folder: "_data"
-    create: true
-    fields:
-      - {label: "Cuerpo", name: "body", widget: "string"}
