@@ -2,6 +2,9 @@
 title: Jekyll Portal
 timezone: UTC
 collections:
+  pages:
+    title: Pages
+    output: true
   portfolio:
     title: Portfolio
     output: true
@@ -10,9 +13,6 @@ collections:
     output: true
   uploads:
     title: Uploads
-    output: true
-  pages:
-    title: Pages
     output: true
 plugins:
 - jekyll-feed
