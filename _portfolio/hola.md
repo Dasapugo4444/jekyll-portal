@@ -1,10 +1,10 @@
 ---
-title: Hola
-categories:
-- Existencialismo
-- Diseño web
-image_path: "/img/uploads/universo-finito_0.jpg"
+title: Universo
+image_path: /img/uploads/universo-finito_0.jpg
 project_name: Universo
-link: universo.com
+link: 'https://universo.com'
+categories:
+  - Existencialismo
+  - Diseño web
 ---
 
