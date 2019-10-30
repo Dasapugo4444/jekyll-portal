@@ -1,6 +1,6 @@
 ---
 title: Jekyll portal
-permalink: /portal/
+permalink: "/portal/"
 layout: page
 ---
 
