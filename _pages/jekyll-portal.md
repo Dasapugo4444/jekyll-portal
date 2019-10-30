@@ -1,6 +1,6 @@
 ---
 title: Jekyll portal
-permalink: "/portal/"
+permalink: /portal/
 layout: page
 ---
 
@@ -18,7 +18,7 @@ layout: page
 
 			<p class="text-faded editable">
 
-sdfdsfs
+                sdfdsfs
 
 			</p>
 
