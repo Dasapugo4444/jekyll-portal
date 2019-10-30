@@ -11,6 +11,16 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Fecha", name: "date", widget: "datetime"}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Cuerpo", name: "body", widget: "markdown"}
+  - name: "portfolio"
+    label: "Portafolio"
+    folder: "_portfolio"
+    create: true
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Imagen", name: "image_path", widget: "image"}
+      - {label: "Proyecto", name: "project_name", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Categorías", name: "categories", widget: "list"}
