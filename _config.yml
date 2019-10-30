@@ -14,10 +14,9 @@ collections:
 plugins:
 - jekyll-feed
 - jekyll-sitemap
-- jekyll-seo-tag
-_editable_regions:
-  image:
-    url_src: true
-_source_editor:
-  tab_size: 4
-  theme: clouds_midnight
+- jekyll-seo
+
+backend:
+  name: github
+  repo: Dasapugo4444/jekyll-portal # Path to your Github repository
+      
